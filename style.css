@@ -1,0 +1,222 @@
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(assets/fonts/static/Inter-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(assets/fonts/static/Inter-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Inter-ExtraBold";
+    src: url(assets/fonts/static/Inter-ExtraBold.ttf) format("truetype");
+}
+
+*{
+    font-family: 'Inter-Regular';
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 1440px;
+    background-color: hsl(36, 100%, 99%);
+    border: 2px solid red;
+}
+
+h1{
+    font-family: 'Inter-ExtraBold';
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: 'Inter-Bold';
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    padding: 48px 128px 0px 128px;
+    justify-content: space-between;
+    
+}
+
+/* =================================================== */
+header h1{
+    font-family: 'Inter-ExtraBold';
+    text-align: center;
+    font-size: 48px;
+}
+
+header nav{
+    display: flex;
+
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-size: 15px;
+}
+
+/* section "Home" */
+.home-container {
+    padding: 48px 128px 0px 128px;
+}
+
+.home-container .wrapper{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "content-1 content-1 content-2"
+        "content-3 content-4 content-2"
+        "content-5 content-6 content-7"
+    ;
+    grid-gap: 24px;
+}
+
+#content-1{
+    grid-area: content-1;
+}
+
+#content-2{
+    grid-area: content-2;
+}
+
+#content-3{
+    grid-area: content-3;
+}
+
+#content-4{
+    grid-area: content-4;
+}
+
+#content-5{
+    grid-area: content-5;
+}
+
+#content-6{
+    grid-area: content-6;
+}
+
+#content-7{
+    grid-area: content-7;
+}
+
+.home-container .wrapper .img img{
+    width: 100%;
+}
+
+.home-container .wrapper .new{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(240, 100%, 5%);
+    padding: 24px;
+}
+
+.home-container .wrapper .new h1{
+    font-size: 48px;
+    color: hsl(35, 77%, 62%);
+}
+
+.home-container .wrapper .new div{
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+    padding: 24px 0px;
+}
+
+.home-container .wrapper .new div h2{
+    color: white;
+    padding: 8px 0px;
+}
+
+.home-container .wrapper .new div p{
+    color: hsl(233, 8%, 79%);
+    padding: 8px 0px;
+}
+
+.home-container .wrapper .new .new-noborder{
+    border: none;
+}
+
+.home-container .wrapper .title h1{
+    font-size: 48px;
+}
+
+.home-container .wrapper .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-container .wrapper .desc p{
+    color: hsl(236, 13%, 42%);
+}
+
+
+.home-container .wrapper .desc button{
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    padding: 16px 24px;
+    border: none;
+    width: 200px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-family: 'Inter-Bold';
+}
+
+.home-container .wrapper .item{
+    display: flex;
+    height: 120px;
+    gap: 24px;
+}
+
+.home-container .wrapper .item .item-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.home-container .wrapper .item .item-detail h1{
+    font-size: 36px;
+    color: hsl(233, 8%, 79%);
+}
+
+.home-container .wrapper .item .item-detail h2{
+    color: hsl(240, 100%, 5%);
+}
+
+.home-container .wrapper .item .item-detail p{
+    color: hsl(236, 13%, 42%);
+}
+
+.attribution{
+    width: 100%;
+    height: 150px;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%)
+}
